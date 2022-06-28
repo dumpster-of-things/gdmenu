@@ -1,0 +1,9 @@
+line 15:
+ - static int columns, bh, mw, mh;
+ + static int columns, bh, mw, mh;
+
+
+// solves the following error (tested on versions 4.9 and 5.0):
+dmenu.c: In function ‘calcoffsets’:
+dmenu.c:80:15: error: ‘columns’ undeclared (first use in this function); did you mean ‘colors’?
+   n = lines * columns * bh;
